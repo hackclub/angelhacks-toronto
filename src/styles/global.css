@@ -5,5 +5,5 @@
 @tailwind utilities;
 
 html {
-  @apply font-nunito;
+  @apply font-nunito bg-sky-blue text-black;
 }
