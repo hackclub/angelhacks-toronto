@@ -1,6 +1,6 @@
-<div class="min-h-screen w-full flex flex-col">
+<div class="flex flex-col w-full min-h-screen">
   <!-- Orpheus Flag -->
-  <div class="absolute mt-2 -ml-2">
+  <div class="absolute hidden mt-2 -ml-2 xs:block">
     <a href="https://hackclub.com/" target="_blank">
       <img
         src="/flag-orpheus-left.svg"
@@ -11,18 +11,19 @@
       />
     </a>
   </div>
-  <div class="mx-[15%] my-auto">
-    <div class="space-y-14 -mt-20">
+  <div class="lg:mx-[15%] my-auto mx-[8%]">
+    <div class="-mt-16 space-y-8">
       <!-- Branding -->
       <div class="flex flex-row space-x-4">
         <!-- Logo -->
-        <div class="-mt-6">
+        <div class="-mt-4 lg:-mt-6">
           <svg
             width="125"
             height="106"
             viewBox="0 0 125 106"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class="lg:w-[125px] lg:h-[106px] md:w-[100px] md:h-[85px] w-[80px] h-[68px]"
           >
             <path
               fill-rule="evenodd"
@@ -38,9 +39,9 @@
           </svg>
         </div>
         <!-- Title -->
-        <div class="text-6xl font-black space-y-4">
+        <div class="space-y-4 text-4xl font-black md:text-5xl lg:text-6xl ">
           <h1 class="text-teal">
-            Angel<span class="text-orange">Hacks</span> 3.0
+            Angel<span class="text-orange">Hacks</span> <span class="hidden xs:inline">3.0</span>
           </h1>
           <h2 class="italic text-orange drop-shadow-[-3px_3px_black]">
             TORONTO
@@ -48,16 +49,17 @@
         </div>
       </div>
       <!-- Generic Info -->
-      <div class="text-4xl font-medium space-y-2">
+      <div class="space-y-2 text-2xl font-medium md:text-3xl lg:text-4xl ">
         <h3>Date and time TBD</h3>
-        <h3 class="text-3xl">Venue TBD</h3>
+        <h3 class="text-xl lg:text-3xl md:text-2xl">Venue TBD</h3>
       </div>
       <!-- Call To Action -->
-      <div class="text-4xl font-black space-y-6">
+      <div class="space-y-6 text-2xl font-black lg:text-4xl md:text-3xl">
         <p>Design, create, and ship your own game!</p>
         <div>
           <button
-            class="bg-orange px-28 py-3 rounded-3xl border-2 border-black drop-shadow-[-4px_4px_black] active:drop-shadow-none active:-translate-x-1 active:translate-y-1"
+            class="bg-orange w-full xs:w-auto xs:px-28 py-3 rounded-3xl border-2 border-black drop-shadow-[-4px_4px_black] active:drop-shadow-none active:-translate-x-1 active:translate-y-1"
+            onclick="alert('We are still finalizing details, check back later!');"
           >
             <p>Join us!</p>
           </button>
@@ -65,8 +67,13 @@
       </div>
     </div>
     <div
-      class="absolute h-40 bg-cover bottom-0 left-0 right-0"
+      class="absolute bottom-0 left-0 right-0 z-10 h-40 bg-cover"
       style="background-image: url(/clouds.png);"
+    >
+    </div>
+    <div
+      class="absolute right-0 bottom-0 mb-[20px] select-none h-[555px] w-[400px] bg-cover z-0 hidden lg:block"
+      style="background-image: url(/cn_tower.png);"
     >
     </div>
   </div>
