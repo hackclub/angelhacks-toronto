@@ -1,32 +1,38 @@
 <div class="flex flex-col my-20 bg-white">
   
   <!-- Heading -->
-  <div class="mx-auto my-16 text-center w-[700px] space-y-6">
+  <div class="mx-auto my-16 text-center lg:w-[700px] px-12 space-y-6">
     <h2 class="mx-auto text-6xl font-black text-orange rotate-1">IT'S A GAME JAM!</h2>
     <p class="mx-auto text-3xl font-black">It's board games, platformers, Sprig games, RPGs. Your imagination is the limit.</p>
   </div>
 
   <!-- Content -->
-  <div class="grid grid-cols-2 mx-32 space-x-12 space-y-12 ">
-    <div class="relative overflow-hidden shadow-xl rounded-3xl -rotate-2 hover:rotate-0 motion-safe:transition-transform">
+  <div class="mx-12 space-y-12 md:mx-32 lg:grid lg:grid-cols-2 lg:space-x-12 ">
+    <div class="relative overflow-hidden shadow-xl rounded-3xl lg:-rotate-2 lg:hover:rotate-0 lg:motion-safe:transition-transform">
       <img src="/hackathon_1.png" alt="Assemble, a Hack Club hackathon in San Francisco." class="object-cover w-full h-full">
       <p class="absolute bottom-0 w-full py-1 text-lg font-bold text-center bg-white/80">Assemble, a Hack Club hackathon in San Francisco.</p>
     </div>
-    <div class="flex font-black text-7xl text-teal">
-      <div class="mx-auto my-auto space-y-20 text-center">
-        <p class="rotate-6">MAKE GAMES</p>
-        <p class="-rotate-2">STICKERS!</p>
+    <div class="flex text-4xl font-black md:text-6xl xl:text-7xl text-teal">
+      <div class="mx-auto my-auto space-y-8 text-center lg:space-y-20">
+        <p class="lg:rotate-6">MAKE GAMES</p>
+        <p class="lg:-rotate-2">STICKERS!</p>
       </div>
     </div>
-    <div class="flex font-black text-7xl text-teal">
+    <div class="hidden text-6xl font-black xl:text-7xl text-teal lg:flex">
       <div class="mx-auto my-auto space-y-20 text-center">
         <p class="-rotate-3">WORKSHOPS</p>
         <p class="rotate-3">FOOD</p>
       </div>
     </div>
-    <div class="relative overflow-hidden shadow-xl rounded-3xl rotate-1 hover:rotate-0 motion-safe:transition-transform">
+    <div class="relative overflow-hidden shadow-xl rounded-3xl lg:rotate-1 lg:hover:rotate-0 lg:motion-safe:transition-transform">
       <img src="/hackathon_2.png" alt="Students at AngelHacks 2019 building projects in groups." class="object-cover w-full h-full">
       <p class="absolute bottom-0 w-full py-1 text-lg font-bold text-center bg-white/80">Students at AngelHacks 2019 building projects in groups.</p>
+    </div>
+    <div class="flex text-4xl font-black md:text-6xl lg:hidden xl:text-7xl text-teal">
+      <div class="mx-auto my-auto space-y-8 text-center">
+        <p class="lg:-rotate-3">WORKSHOPS</p>
+        <p class="lg:rotate-3">FOOD</p>
+      </div>
     </div>
   </div>
 </div>
