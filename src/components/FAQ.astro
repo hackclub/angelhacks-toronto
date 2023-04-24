@@ -32,7 +32,7 @@ import FAQCard from "./FAQCard.astro";
       />
       <FAQCard
         question="What is Hack Club?"
-        answer="Hack Club is a nonprofit global network (based in the U.S.) and network of student-led coding clubs & High school makers. Founded in 2014, Hack Clubs are now in nearly 400 high schools with 10,000 students each year."
+        answer="<a href='https://hackclub.com/' target='_blank'>Hack Club</a> is a nonprofit global network (based in the U.S.) and network of student-led coding clubs & High school makers. Founded in 2014, Hack Clubs are now in nearly 400 high schools with 10,000 students each year."
       />
     </div>
     <div class="space-y-8">
@@ -57,5 +57,11 @@ import FAQCard from "./FAQCard.astro";
         answer="There will be free food and refreshments. Workshops and activities will be held throughout the event. Adult supervision will be present at all times with access restricted to participants."
       />
     </div>
+  </div>
+  <div class="mx-8 my-8 sm:mx-12 md:mx-32">
+    <FAQCard
+      question="I have another question that'as not answered here!"
+      answer="Feel free to email us at <a href='mailto:toronto@angelhacks.org' target='_blank'>toronto@angelhacks.org</a> or send us a message in #angelhacks-toronto on the <a href='https://hackclub.com/slack' target='_blank'>Hack Club Slack</a>."
+    />
   </div>
 </div>
