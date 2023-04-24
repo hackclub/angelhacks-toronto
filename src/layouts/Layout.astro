@@ -4,7 +4,6 @@ export interface Props {
   description: string;
 }
 
-const url = "https://angelhacksto.hackclub.com";
 const image = "/og_image.png";
 const { title, description } = Astro.props;
 ---
@@ -19,7 +18,7 @@ const { title, description } = Astro.props;
     <title>{title}</title>
     <meta property="og:title" content={title} />
     <meta name="twitter:title" content={title} />
-    <meta name="og:url" content={url} />
+    <meta name="og:url" content={Astro.url} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="AngelHacks Toronto" />
     <meta name="description" content={description} />
